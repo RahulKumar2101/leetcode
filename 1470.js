@@ -39,4 +39,15 @@ let shuffle = function (nums, n) {
     return z;
 }
 
-console.log(shuffle([1,2,3,4,4,3,2,1], 4));
+// console.log(shuffle([1,2,3,4,4,3,2,1], 4));
+
+function shuffle2(nums, n){
+    let ans = [];
+    for (let i = 0; i < n; i++){
+        ans.push(nums[i]); // xi
+        ans.push(nums[i + n]) // yi
+    }
+    return ans;
+}
+
+console.log(shuffle2([1,2,3,4,4,3,2,1], 4));
